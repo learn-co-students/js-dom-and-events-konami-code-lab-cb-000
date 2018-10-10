@@ -27,6 +27,7 @@ describe('index', () => {
 
       for (let i = 0, l = code.length; i < l; i++) {
         triggerKeyDown(code[i])
+        console.log(code[i])
       }
 
       expect(window.alert).toHaveBeenCalled()
